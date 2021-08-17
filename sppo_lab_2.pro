@@ -8,6 +8,7 @@ CONFIG += c++11 console
 SOURCES += \
         Units.cpp \
         CppUnits.cpp \
+        CppUnitGenerator.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -18,3 +19,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     Units.h \
     CppUnits.h \
+    IUnitGenerator.h \
+    CppUnitGenerator.h \

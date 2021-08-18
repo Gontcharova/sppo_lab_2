@@ -15,9 +15,7 @@ class CsMethodUnit : public MethodUnit
 {
 public:
 
-    explicit CsMethodUnit(const std::string& name,
-        const std::string& returnType,
-        Flags flags);
+    explicit CsMethodUnit(const std::string& name, const std::string& returnType, Flags flags);
     ~CsMethodUnit();
 
     std::string compile(unsigned int level = 0) const;

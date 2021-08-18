@@ -15,9 +15,7 @@ class JavaMethodUnit : public MethodUnit
 {
 public:
 
-    explicit JavaMethodUnit(const std::string& name,
-        const std::string& returnType,
-        Flags flags);
+    explicit JavaMethodUnit(const std::string& name, const std::string& returnType, Flags flags);
     ~JavaMethodUnit();
 
     std::string compile(unsigned int level = 0) const;

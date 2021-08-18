@@ -1,13 +1,13 @@
 #pragma once
 #include "IUnitGenerator.h"
-#include "CppUnits.h"
+#include "CsUnits.h"
 
-class CppUnitGenerator : public IUnitGenerator
+class CsUnitGenerator : public IUnitGenerator
 {
 public:
 
-    explicit CppUnitGenerator();
-    ~CppUnitGenerator();
+    explicit CsUnitGenerator();
+    ~CsUnitGenerator();
 
     std::shared_ptr<ClassUnit> getClassUnit(const std::string& name, uint32_t modifier = ClassUnit::NONE) const override;
 

@@ -8,6 +8,8 @@ CONFIG += c++11 console
 SOURCES += \
         Units.cpp \
         CppUnits.cpp \
+        JavaUnits.h \
+        CsUnits.h \
         CppUnitGenerator.cpp \
         main.cpp
 
@@ -19,5 +21,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     Units.h \
     CppUnits.h \
+    JavaUnits.h \
+    CsUnits.h \
     IUnitGenerator.h \
     CppUnitGenerator.h \
